@@ -30,7 +30,7 @@ $step2 = 'essential_options';
             <div class="ssw-field">
                 <label for="ssw-admin-email" class="ssw-label ssw-required" title="Admin Email">Admin Email</label>
                 <input id="ssw-admin-email" class="ssw-subfield ssw-input" name="admin_email" type="text" value="<?php _e($current_user_email); ?>" tabindex="1" onblur="ssw_js_validate_email()"/>
-            </div> 
+            </div>
             <div class="ssw-error ssw-field" id="ssw-validate-email-error" name="ssw_validate_email_error">
                 <label class="ssw-validate-email-error-field-spacing ssw-label">&nbsp;</label>
                 <span id="ssw-validate-email-error-label" class="ssw-span">Please enter valid email address.</span>
@@ -38,13 +38,13 @@ $step2 = 'essential_options';
             <div class="ssw-field" id="ssw-site-address-display-field">
                 <label class="ssw-site-address-display-field-spacing ssw-label" id="ssw-site-address-display-field-spacing" >Your URL</label>
                 <span id="ssw-site-address-display"><?php _e($current_site_root_address); ?>&lt;Site Category&gt;-&lt;Site Address&gt;</span>
-            </div>                 
+            </div>
             <div class="ssw-field">
                 <label for="ssw-site-category" class="ssw-site-address ssw-required ssw-label" title="Site Category">Site Category</label>
                 <select id="ssw-site-category" class="ssw-subfield ssw-select" name="site_category" tabindex="2" onchange="ssw_js_site_address_display()" required >
                     <?php
                     foreach ( $site_user_category as $site_user => $site_category ) {
-                        if ( $is_master_user != true ) {        
+                        if ( $is_master_user != true ) {
                             if ( $is_user_role_restriction != true ) {
                                 foreach ( $site_category as $key => $value) {
                                     $key = $this->ssw_sanitize_option('sanitize_url', $value);
@@ -58,7 +58,7 @@ $step2 = 'essential_options';
                             }
                             else {
                                 foreach ( $user_role_mapping as $restricted_role_in_ssw => $restricted_role_in_wp ) {
-                                    if ( $current_user_role == $restricted_role_in_wp && $restricted_role_in_ssw == $site_user ) { 
+                                    if ( $current_user_role == $restricted_role_in_wp && $restricted_role_in_ssw == $site_user ) {
                                         foreach ( $site_category as $key => $value) {
                                             $key = $this->ssw_sanitize_option('sanitize_url', $value);
                                             if($key!='') {
@@ -110,24 +110,24 @@ $step2 = 'essential_options';
             ?>
                 <span class="ssw-radio-text strong">Public</span>
                 <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                <span class="ssw-radio-text"><input type="radio" class="ssw-input" name="site_privacy" value="4" tabindex="5" onclick="ssw_js_validate_privacy()">Allow search engines to index this site</span>
+                <span class="ssw-radio-text"><input aria-label="Allow search engines to index tis site" type="radio" class="ssw-input" name="site_privacy" value="4" tabindex="5" onclick="ssw_js_validate_privacy()">Allow search engines to index this site</span>
                 <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                <span class="ssw-radio-text"><input type="radio" class="ssw-input" name="site_privacy" value="3" tabindex="6" onclick="ssw_js_validate_privacy()">Not indexed in search engines but still available for public to view</span>
+                <span class="ssw-radio-text"><input aria-label="Discourage search engine indexing" type="radio" class="ssw-input" name="site_privacy" value="3" tabindex="6" onclick="ssw_js_validate_privacy()">Not indexed in search engines but still available for public to view</span>
                 <?php
-                /** 
-                * Check from the SSW Options if WPMU Multisite Privacy 
+                /**
+                * Check from the SSW Options if WPMU Multisite Privacy
                 * plugin is installed or not and if yes then
                 * display following privacy options
                 */
-                /** 
-                * The values -3 to 1 are defined and being used by 
-                * Multisite Privacy Plugin. Due to sanitization we add 
-                * 3 to values and subtract 3 on receiving it. 
-                * SSW Plugin simply stores and puts this value in 
-                * "blog_public" option in wp_options table for that 
-                * particular site 
-                * Triple equal can not be used here since this value 
-                * is coming from database 
+                /**
+                * The values -3 to 1 are defined and being used by
+                * Multisite Privacy Plugin. Due to sanitization we add
+                * 3 to values and subtract 3 on receiving it.
+                * SSW Plugin simply stores and puts this value in
+                * "blog_public" option in wp_options table for that
+                * particular site
+                * Triple equal can not be used here since this value
+                * is coming from database
                 */
 
                 if ($wpmu_multisite_privacy_plugin == true) {
@@ -135,11 +135,11 @@ $step2 = 'essential_options';
                     <label style="height:auto;" class="ssw-label">&nbsp;</label>
                     <span class="ssw-radio-text strong">Private</span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input type="radio" class="ssw-input" name="site_privacy" value="2" tabindex="7" onclick="ssw_js_validate_privacy()"><?php _e($private_network_users_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="Visible to all users registered in network" type="radio" class="ssw-input" name="site_privacy" value="2" tabindex="7" onclick="ssw_js_validate_privacy()"><?php _e($private_network_users_txt); ?></span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input type="radio" class="ssw-input" name="site_privacy" value="1" tabindex="8" onclick="ssw_js_validate_privacy()"><?php _e($private_site_users_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="Limited to users you specify" type="radio" class="ssw-input" name="site_privacy" value="1" tabindex="8" onclick="ssw_js_validate_privacy()"><?php _e($private_site_users_txt); ?></span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input type="radio" class="ssw-input" name="site_privacy" value="0" tabindex="9" onclick="ssw_js_validate_privacy()"><?php _e($private_administrator_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="Limited to only site administrators" type="radio" class="ssw-input" name="site_privacy" value="0" tabindex="9" onclick="ssw_js_validate_privacy()"><?php _e($private_administrator_txt); ?></span>
                 <?php
                 }
             }
@@ -158,7 +158,7 @@ $step2 = 'essential_options';
             </div>
             <div class="ssw-field">
                 <label class="ssw-site-terms-error-field-spacing ssw-label">&nbsp;</label>
-                <input id="ssw-site-terms-input" class="" name="site_terms" type="checkbox" tabindex="10" onchange="ssw_js_validate_terms()"/><?php _e($terms_of_use); ?> 
+                <input id="ssw-site-terms-input" aria-label="I accept the terms of use" class="" name="site_terms" type="checkbox" tabindex="10" onchange="ssw_js_validate_terms()"/><?php _e($terms_of_use); ?> 
             </div>
             <div class="ssw-error ssw-field" id="ssw-site-terms-error" name="ssw_site_terms_error">
                 <label class="ssw-site-title-error-field-spacing ssw-label">&nbsp;</label>
@@ -171,7 +171,7 @@ $step2 = 'essential_options';
             <div class="ssw-proceed ssw-field">
                 <input name="ssw_back_btn" class="ssw-primary-btn ssw-back-btn" type="button" onclick="ssw_js_submit_form_previous()" value="Back" tabindex="11" />
                 <input name="ssw_next_btn" class="ssw-primary-btn ssw-front-btn" type="button" value="Next" onclick="ssw_js_submit_form_next()" tabindex="12" />
-            </div> 
+            </div>
         </fieldset>
     </div>
 </div>
