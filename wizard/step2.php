@@ -110,9 +110,9 @@ $step2 = 'essential_options';
             ?>
                 <span class="ssw-radio-text strong">Public</span>
                 <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                <span class="ssw-radio-text"><input aria-label="Allow search engines to index tis site" type="radio" class="ssw-input" name="site_privacy" value="4" tabindex="5" onclick="ssw_js_validate_privacy()">Allow search engines to index this site</span>
+                <span class="ssw-radio-text"><input aria-label="allow search engines to index this site" type="radio" class="ssw-input" name="site_privacy" value="4" tabindex="5" onclick="ssw_js_validate_privacy()">Allow search engines to index this site</span>
                 <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                <span class="ssw-radio-text"><input aria-label="Discourage search engine indexing" type="radio" class="ssw-input" name="site_privacy" value="3" tabindex="6" onclick="ssw_js_validate_privacy()">Not indexed in search engines but still available for public to view</span>
+                <span class="ssw-radio-text"><input aria-label="discourage search engines from indexing this site" type="radio" class="ssw-input" name="site_privacy" value="3" tabindex="6" onclick="ssw_js_validate_privacy()">Not indexed in search engines but still available for public to view</span>
                 <?php
                 /**
                 * Check from the SSW Options if WPMU Multisite Privacy
@@ -135,11 +135,11 @@ $step2 = 'essential_options';
                     <label style="height:auto;" class="ssw-label">&nbsp;</label>
                     <span class="ssw-radio-text strong">Private</span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input aria-label="Visible to all users registered in network" type="radio" class="ssw-input" name="site_privacy" value="2" tabindex="7" onclick="ssw_js_validate_privacy()"><?php _e($private_network_users_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="visible to all users at new york university" type="radio" class="ssw-input" name="site_privacy" value="2" tabindex="7" onclick="ssw_js_validate_privacy()"><?php _e($private_network_users_txt); ?></span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input aria-label="Limited to users you specify" type="radio" class="ssw-input" name="site_privacy" value="1" tabindex="8" onclick="ssw_js_validate_privacy()"><?php _e($private_site_users_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="limited to users you specify" type="radio" class="ssw-input" name="site_privacy" value="1" tabindex="8" onclick="ssw_js_validate_privacy()"><?php _e($private_site_users_txt); ?></span>
                     <label class="ssw-radio-field-spacing ssw-label">&nbsp;</label>
-                    <span class="ssw-radio-text"><input aria-label="Limited to only site administrators" type="radio" class="ssw-input" name="site_privacy" value="0" tabindex="9" onclick="ssw_js_validate_privacy()"><?php _e($private_administrator_txt); ?></span>
+                    <span class="ssw-radio-text"><input aria-label="Limited only to site administrators" type="radio" class="ssw-input" name="site_privacy" value="0" tabindex="9" onclick="ssw_js_validate_privacy()"><?php _e($private_administrator_txt); ?></span>
                 <?php
                 }
             }
@@ -158,7 +158,7 @@ $step2 = 'essential_options';
             </div>
             <div class="ssw-field">
                 <label class="ssw-site-terms-error-field-spacing ssw-label">&nbsp;</label>
-                <input id="ssw-site-terms-input" aria-label="I accept the terms of use" class="" name="site_terms" type="checkbox" tabindex="10" onchange="ssw_js_validate_terms()"/><?php _e($terms_of_use); ?> 
+                <input id="ssw-site-terms-input" aria-label="accept the terms of use" class="" name="site_terms" type="checkbox" tabindex="10" onchange="ssw_js_validate_terms()"/><?php _e($terms_of_use); ?>
             </div>
             <div class="ssw-error ssw-field" id="ssw-site-terms-error" name="ssw_site_terms_error">
                 <label class="ssw-site-title-error-field-spacing ssw-label">&nbsp;</label>
