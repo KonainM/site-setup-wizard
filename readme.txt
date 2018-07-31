@@ -1,5 +1,5 @@
-=== Site Setup Wizard ===
-Contributors: shah.neel
+=== Site Setup Wizard (Accessibility Ready)===
+Contributors: shah.neel, KonainM
 Tags: plugin, multisite, site setup wizard, site registration, site creation, create site, wp-signup
 Requires at least: 4.0
 Tested up to: 4.8
@@ -59,20 +59,9 @@ Please check Screenshots for more information.
 * Add shortcode `[site_setup_wizard]` on the page where you would like to display this wizard for allowing users to create new sites.
 * You can change settings of the plugin from __Network Admin -> Create Site -> Options__ screen and click __Save Options__.
 
-== Screenshots ==
-
-1. Select Site Type
-2. Essential Settings for creating a site
-3. Select Theme for your site
-4. Select Features/Plugins available to activate on your site
-5. Select Features/Plugins based on categorization from WPMU Pretty Plugins
-6. Finish page for wizard displaying site url
-7. Basic settings available in Site Setup Wizard
-8. Advanced settings available in Site Setup Wizard
-9. More settings available in Site Setup Wizard
-10. Analytics page for metrics collection
-
 == Upgrade Notice ==
+= 1.5.9 =
+Made accessibility updates to the plugin to make it compliant to the WCAG 2.0 AA standard of Web Accessibility
 = 1.5.8 =
 Fixed broken css issue when using Twenty Seventeen theme and Site Setup Wizard
 
