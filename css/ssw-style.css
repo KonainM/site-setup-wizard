@@ -268,7 +268,11 @@
 	margin:0;
 }
 .ssw-back-btn:hover {
-	background-color:#999999;
+	transform: scale(1.1);
+	 box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+	-webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 .ssw-back-btn:active {
@@ -276,7 +280,11 @@
 }
 
 .ssw-front-btn:hover {
-	background-color:#26cda4;
+	transform: scale(1.1);
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+ -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ -o-transition: all 0.4s;
 }
 
 .ssw-front-btn:active {
@@ -284,7 +292,10 @@
 }
 
 .ssw-start-btn:hover {
-	background-color:#bfbfbf;
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+	-webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
 	cursor:pointer;
 }
 
