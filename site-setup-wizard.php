@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Site Setup Wizard (Accessibility Ready)
  * Description: Allows users to create new sites using a wizard of multiple steps and pre-selecting site settings such as theme, plugins, privacy, etc. You can use the wizard by adding shortcode [site_setup_wizard] at any place on the site. The plugin is completely customizable.
- * Plugin URI: https://github.com/neelakansha85/site-setup-wizard
+ * Plugin URI: https://github.com/KonainM/site-setup-wizard-Accessibility-Ready-
  * Author: Neel Shah <neel@nsdesigners.com>, Konain Mukadam(kmm976@nyu.edu)
  * Author URI: http://neelshah.info
  * License: GPL2
