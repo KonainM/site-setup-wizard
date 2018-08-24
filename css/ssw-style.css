@@ -198,6 +198,21 @@
 	color:#FFFFFF;
 }
 
+.ssw-proceed .ssw-front-btn:hover {
+	background-color:#4e2d82 !important;
+	color:#FFFFFF !important;
+}
+
+.ssw-proceed .ssw-front-btn:active {
+	background-color:#4e2d82 !important;
+	color:#FFFFFF !important;
+}
+
+.ssw-proceed .ssw-front-btn:focus {
+	background-color:#4e2d82 !important;
+	color:#FFFFFF !important;
+}
+
 .ssw-xtra-block {
 	position: relative;
 	float: right;
@@ -292,16 +307,35 @@
 }
 
 .ssw-start-btn:hover {
-	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
-	-webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-	cursor:pointer;
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2) !important;
+	-webkit-transition: all 0.4s !important;
+  -moz-transition: all 0.4s !important;
+  -o-transition: all 0.4s !important;
+	cursor:pointer !important;
+	background-color: #4e2d82 !important;
+  color: #fff !important;
 }
 
 .ssw-start-btn:active {
-	background-color:#999999;
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2) !important;
+	-webkit-transition: all 0.4s !important;
+  -moz-transition: all 0.4s !important;
+  -o-transition: all 0.4s !important;
+	cursor:pointer !important;
+	background-color: #4e2d82 !important;
+  color: #fff !important;
 }
+
+.ssw-start-btn:focus {
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2) !important;
+	-webkit-transition: all 0.4s !important;
+  -moz-transition: all 0.4s !important;
+  -o-transition: all 0.4s !important;
+	cursor:pointer !important;
+	background-color: #4e2d82 !important;
+  color: #fff !important;
+}
+
 
 .ssw-back-btn:hover {
 	cursor:pointer;

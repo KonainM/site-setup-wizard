@@ -6,15 +6,14 @@ Tested up to: 4.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2V9UGN9L5547U&lc=US&item_name=Site%20Setup%20Wizard%20Plugin&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 
 Offers registered users flexibility to select site type, plugins, privacy and many other settings before creating a new site.
 
 == Description ==
 
-Site Setup Wizard plugin allows all your multisite registered users to be able to create new sites using many options such as their site type, category, address, theme, plugins they want to activate, privacy and many more in form of steps. It can be used by placing a shortcode [site_setup_wizard] on any page. Site category and addresses are separated using a hyphen (-). For example in http://yourdomain.com/hr-benefits **hr is a site category** while **benefits is site address**. This helps in organizing sites efficiently.   
+Site Setup Wizard plugin allows all your multisite registered users to be able to create new sites using many options such as their site type, category, address, theme, plugins they want to activate, privacy and many more in form of steps. It can be used by placing a shortcode [site_setup_wizard] on any page. Site category and addresses are separated using a hyphen (-). For example in http://yourdomain.com/hr-benefits **hr is a site category** while **benefits is site address**. This helps in organizing sites efficiently.
 
-Requires a wordpress multisite subdirectory install. 
+Requires a wordpress multisite subdirectory install.
 
 = Users can select from the below options =
 * Site Type
@@ -68,13 +67,13 @@ Fixed broken css issue when using Twenty Seventeen theme and Site Setup Wizard
 = 1.5.7 =
 Fixed issue related to not allowing users to create sites with a single quote in the site title
 
-= 1.5.6 = 
+= 1.5.6 =
 Added new feature to hide selected Themes and Plugins from wizard steps.
 
-= 1.5.5 = 
+= 1.5.5 =
 Added new charts on Analytics Page.
 
-= 1.5.4 = 
+= 1.5.4 =
 Fixed a critical issue related to Themes Step. Please update now.
 
 = 1.5.3 =
@@ -89,7 +88,7 @@ Bug fixes.
 = 1.5 =
 Provides a new step for selecting Themes to users.
 
-= 1.4.1= 
+= 1.4.1=
 Fixed a critical issue related to your custom settings. Please update now.
 
 = 1.4 =
@@ -97,11 +96,11 @@ This version changes the value for default settings.
 
 == Frequently Asked Questions ==
 
-= Does this plugin display Privacy Selection Options in wizard? = 
+= Does this plugin display Privacy Selection Options in wizard? =
 
 Yes, it does display wordpress privacy options for user to select while creating his site. You also have a choice to disable this if required.
 
-= Does it support WPMU Multisite Privacy Plugin? = 
+= Does it support WPMU Multisite Privacy Plugin? =
 
 Yes, it supports and has an option for you to enable under External Plugins, if you want to take advantage of WPMU Multisite Privacy Plugin.
 
@@ -117,15 +116,15 @@ Please use CSS property to change button color for now. You can use class **.ssw
 }`
 
 
-= Does this plugin display a list of all available plugins to select while creating a site? = 
+= Does this plugin display a list of all available plugins to select while creating a site? =
 
 Yes, it supports and displays all available for users to select on `Features (Step 4)` Page while creating a site if WPMU Pretty Plugins check box is not enabled under External Plugins section on `Options` page.
 
-= Does it support WPMU Pretty Plugins? = 
+= Does it support WPMU Pretty Plugins? =
 
-Yes, it supports and has an option for you to enable under External Plugins, if you want to take additional advantage of WPMU Pretty Plugins. It will display all available plugins to users based on categories defined in WPMU Pretty Plugins. 
+Yes, it supports and has an option for you to enable under External Plugins, if you want to take additional advantage of WPMU Pretty Plugins. It will display all available plugins to users based on categories defined in WPMU Pretty Plugins.
 
-= Does this plugin work with a CDN enabled? = 
+= Does this plugin work with a CDN enabled? =
 
 Yes, this plugin works fine with a CDN enabled for your site.
 
@@ -133,7 +132,7 @@ Yes, this plugin works fine with a CDN enabled for your site.
 
 You can activate it, but it won't do anything. You need to have the multisite functionality enabled and working first.
 
-= Does it allow super admins to set banned site names? = 
+= Does it allow super admins to set banned site names? =
 
 Yes, it allows Super admins to add a set of banned site addresses/names from the Options page.
 
@@ -177,7 +176,7 @@ Please check https://github.com/neelakansha85/site-setup-wizard for more documen
 * Added a new feature to hide selected Themes from theme selection page. Please refer to [Issue #35](https://github.com/neelakansha85/site-setup-wizard/issues/35) for additional details.
 * Added a new feature to hide selected Plugins from plugins selection (Features) page. Please refer to [Issue #36](https://github.com/neelakansha85/site-setup-wizard/issues/36) for additional details.
 
-= 1.5.5 = 
+= 1.5.5 =
 * Added pretty charts on Analytics Page for meaningful insights of Plugin usage.
 * Added new feature to allow super admins to hide Features page if required.
 
@@ -198,11 +197,11 @@ Please check https://github.com/neelakansha85/site-setup-wizard for more documen
 * Added new Select Theme step after Essential Settings. [Issue #21](https://github.com/neelakansha85/site-setup-wizard/issues/21)
 * Store Site Type option for newly created sites. [Issue #20](https://github.com/neelakansha85/site-setup-wizard/issues/20)
 
-= 1.4.1 = 
+= 1.4.1 =
 * Fixed an issue where users custom settings would get deleted on deactivating plugin.
 * Added upgrade functionality for updating database when required. [Issue #26](https://github.com/neelakansha85/site-setup-wizard/issues/26)
 
-= 1.4 = 
+= 1.4 =
 * Added new Export/Import settings functionality.
 * Updated default settings value for releasing in Wordpress.org.
 * Updated readme.txt with new screenshots for plugin.
@@ -236,9 +235,9 @@ Please check https://github.com/neelakansha85/site-setup-wizard for more documen
 * Removed template_type field from wp_ssw_main_nsd table
 * Fixed [Issue #12](https://github.com/neelakansha85/site-setup-wizard/issues/12) Restricting users from creating sites with names as site categories
 * Fixed [Issue #1](https://github.com/neelakansha85/site-setup-wizard/issues/1)
-* Fixed PHP Warnings and Notices that used to appear when running this plugin. 
+* Fixed PHP Warnings and Notices that used to appear when running this plugin.
 
-= 1.2.2 = 
+= 1.2.2 =
 * Added a Readme.md file for documentation
 * Added Debug functionality to plugin where it logs all plugin data to wp-content/uploads/**nsd_ssw_sql_log.log** if **debug_mode** is set true.
 * Changed custom.js to ssw-main.js and variables associated with it for identifying it easily while degubbing.
